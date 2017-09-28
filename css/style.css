@@ -66,11 +66,8 @@ ul{
   padding: 0px;
 }
 .postlist a:hover{
-  text-decoration: none;
-  background-image: url(line.png);
-  background-repeat: repeat-x;
-  background-position: left bottom;
-  padding-bottom: 4px;
+  text-decoration: underline;
+  padding-bottom: 5px;
 }
 img{
    clear: both;
