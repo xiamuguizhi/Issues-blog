@@ -66,6 +66,7 @@ ul{
   padding: 0px;
 }
 .postlist a:hover{
+  color: #333;
   text-decoration: underline;
   padding-bottom: 5px;
 }
