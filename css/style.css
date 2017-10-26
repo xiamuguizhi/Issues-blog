@@ -1,10 +1,18 @@
 body{
   padding: 0px 10px 30px 10px;
 }
+.h-title{
+  text-align: center;
+}
+.h-title img{
+  width: 80px;
+  margin: 5px auto;
+}
 .blog_title{
   font-size: 26px;
   color: #333;
   text-decoration: none;
+  text-align: center;
 }
 .blog_title:hover{
   color:#21759b;
