@@ -1,9 +1,18 @@
+## commit
+- 改了一下UI
+- 重写了一下框架
+
+## dev
+- 用户体验(自用的小提示框)
+- 交互，修复`bug`
+
 ## 关于
 
 **fork自 [wuhaoworld](https://github.com/wuhaoworld)**
 - 感谢原作者提供思路，美化ing
 - 2017/9/27
 - **本项目依赖`issues`，所以不要在`issues`中随意提交代码。谢谢合作**
+
 ## 部署方法
 
  1. Fork 本项目，然后再新建一个用于存放 blog（issues）的 repo。 （fork 的项目是没有 issue 的，所以得新建个项目）
