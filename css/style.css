@@ -1,15 +1,88 @@
-body{
-  overflow: hidden;
+#header p{
+
+}
+#link span{
+  position: relative;
+  display: block;
+  width: 20%;
+  height: 2px;
+  background: #333;
+  transition: all .3s;
+  z-index: 99;
+}
+#link span em{
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 2px;
+  background: #333;
+}
+#link span .oneem{
+  right: 0;
+  animation:oneem .5s 1;
+}
+#link span .twoem{
+  bottom: 0;
+  left: 0;
+  animation: twoem .5s 1;
+}
+@keyframes oneem {
+  0%{
+    right: -40%;
+  }
+}
+@keyframes twoem {
+  0%{
+    left: -40%;
+  }
+}
+#link span i{
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  background: #333;
+}
+#link span .one{
+  left: 0;
+  animation:onespan .5s 1;
+}
+#link span .two{
+  right: 0;
+  animation:twospan .5s 1;
+}
+@keyframes onespan {
+  0%{
+    left: -40%;
+  }
+}
+@keyframes twospan {
+  0%{
+    right: -40%;
+  }
 }
 .blog_title{
-  font-size: 26px;
+  display: inline-block;
+  /*万恶盒子模型/找bug10分钟系列*/
+  font-size: 25px;
   color: #333;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+  animation:transform 1s 1;
+}
+.blog_title i{
+  opacity: 0;
+}
+@keyframes transform {
+  0%{
+      opacity: 0;
+      transform:  translate(0,-80px);
+  }
 }
 .blog_title:hover{
-  color:#21759b;
   text-decoration: none;
+  transition: all .2s;
+  
 }
 h2{
   background-color: #eee;
@@ -24,7 +97,7 @@ h2{
 .create_at{
   color: #999;
   display: block;
-  margin: 15px 0px;
+  margin: 15px 0;
   font-size: 12px;
 }
 
@@ -42,25 +115,26 @@ h2{
   float: right;
 }
 /*分辨率*/
-.nav{
-  display: none;
-}
 @media only screen and (min-width: 600px) {
     html,body{
-      width: 100%;
-      height: 100%;
       background: #fff;
     }
     .blog_title{
-      opacity: 0;
+      opacity: 1;
     }
     .nav{
-      display: block;
+      display: inline-block;
     }
     #container {
+      border: 1px solid #333;
+      border-radius: 15px;
+      box-shadow: 1px 1px 5px #ccc;
       padding: 30px 60px 40px 60px;
       border-radius: 12px;
-      margin-left: 200px;
+    }
+    #mini img{
+        border: none;
+        box-shadow: none;
     }
 }
 
@@ -68,7 +142,7 @@ h2{
   margin-bottom: 20px;
 }
 .postlist{
-  margin: 20px 0px;
+  margin: 20px 0;
   list-style: none;
 }
 ul{
@@ -94,4 +168,17 @@ img{
 }
 .ds-social-links{
   width: 300px !important; /* 修正多说在 iphone5 宽度下带来的横向滚动条的问题*/
+}
+
+/*ca画布*/
+/*该效果来自
+  https://github.com/LocoTi/CanvasParticles
+***********/
+#mydiv{
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -1;
+  width: 100%;
+  hegith: 100%:
 }

@@ -6,11 +6,12 @@
     <title>Qzone</title>
     <link rel='stylesheet' href='css/GitHub2.css' type='text/css'/>
     <link rel='stylesheet' href='css/style.css' type='text/css'/>
-    <link rel="icon" href="http://bilibili.tv/favicon.ico">
+    <link rel="icon" href="http://github.com/favicon.ico">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/highlight.css">
     <link href="css/nav.css" rel="stylesheet">
-    <script type="text/javascript" src="js/nav.js"></script>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/nav.js"></script>
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/director.min.js"></script>
     <script src="js/ractive.min.js"></script>
@@ -20,45 +21,25 @@
     <script src="http://apps.bdimg.com/libs/highlight.js/8.6/highlight.min.js"></script>
 </head>
 <body>
-<div class="nav">
-      <div class="nav-top">
-          <div id="mini" style="border-bottom:1px solid rgba(255,255,255,.1)"><img src="images/mini.png" ></div>
-      </div>
-      <ul>
-          <li class="nav-item">
-              <a href="javascript:;"><i class="my-icon nav-icon icon_1"></i><span>网站配置</span><i class="my-icon nav-more"></i></a>
-              <ul>
-                  <li><a href="javascript:;"><span>网站设置</span></a></li>
-                  <li><a href="javascript:;"><span>友情链接</span></a></li>
-                  <li><a href="javascript:;"><span>分类管理</span></a></li>
-                  <li><a href="javascript:;"><span>系统日志</span></a></li>
-              </ul>
-          </li>
-          <li class="nav-item">
-              <a href="javascript:;"><i class="my-icon nav-icon icon_2"></i><span>文章管理</span><i class="my-icon nav-more"></i></a>
-              <ul>
-                  <li><a href="javascript:;"><span>站内新闻</span></a></li>
-                  <li><a href="javascript:;"><span>站内公告</span></a></li>
-                  <li><a href="javascript:;"><span>登录日志</span></a></li>
-              </ul>
-          </li>
-          <li class="nav-item">
-              <a href="javascript:;"><i class="my-icon nav-icon icon_3"></i><span>订单管理</span><i class="my-icon nav-more"></i></a>
-              <ul>
-                  <li><a href="javascript:;"><span>订单列表</span></a></li>
-                  <li><a href="javascript:;"><span>打个酱油</span></a></li>
-                  <li><a href="javascript:;"><span>也打酱油</span></a></li>
-              </ul>
-          </li>
-      </ul>
-  </div>
+<div id="mydiv"></div>
 <div id="header">
-  <h1>
-    <a href="#/" class="blog_title">小前端的说说</a>
+  <h1 id="link">
+    <span>
+      <em class="oneem"></em>
+      <i class="one"></i>
+    </span>
+    <a href="#/" class="blog_title">
+            陈大大爱唠嗑
+    </a>
+    <span>
+      <em class="twoem"></em>
+      <i class="two"></i>
+    </span>
   </h1>
+  <p>说话又不会说.就只有写代码这种,才维持得了生活,这样子.</p>
 </div>
 <div id="container">
-    <center><img src="images/loading.gif" alt="loading" class="loading"></center>
+    <center><img src="loading.gif" alt="loading" class="loading"></center>
 </div>
 <script type="text/ractive" id="listTpl">
     <ul class="postlist">
@@ -83,5 +64,25 @@
     {{/post}}
 </script>
 <script src="app.js"></script>
+<script type="text/javascript" src="js/canvas-particle.js"></script>
+<script type="text/javascript">
+  window.onload = function(){
+    //配置
+    var config = {
+        vx: 4,//点x轴速度,正为右，负为左
+        vy:  4,//点y轴速度
+        height: 2,//点高宽，其实为正方形，所以不宜太大
+        width: 2,
+        count: 100,//点个数
+        color: "121, 162, 185",//点颜色
+        stroke: "130,255,255",//线条颜色
+        dist: 6000,//点吸附距离
+        e_dist: 20000,//鼠标吸附加速距离
+        max_conn: 10//点到点最大连接数
+    }
+    //调用
+    CanvasParticle(config);
+}
+</script>
 </body>
 </html>
