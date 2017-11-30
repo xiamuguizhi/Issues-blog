@@ -26,11 +26,15 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </head>
 <body>
-<div id="mydiv"></div>
+<!--
+<div id="bg">
+    <img src="http://ww1.sinaimg.cn/large/c2a4d307gw1eoy9gdvjkqj211y0np441.jpg" alt="">
+</div>
+-->
 <div id="header">
   <h1 id="link">
       <a href="#">
-          <img src="https://avatars0.githubusercontent.com/u/30407568?s=460&v=4" alt="Github头像" id="me">
+          <img src="https://avatars0.githubusercontent.com/u/30407568?s=460&v=4" alt="骚年，你的网速太差了" id="me">
       </a>
     <br>
       <h5>
@@ -48,7 +52,7 @@
 <script type="text/ractive" id="listTpl">
     <ul class="postlist">
         {{#posts}}
-        <li class="postlist"><a href="#post/{{number}}">{{title}}</a>
+        <li class="postlist"><i class="line"></i><a href="#post/{{number}}">{{title}}</a>
         <span class="datetime">
         <!--<img src="{{user.avatar_url}}&s=18" class="avatar">.-->
         <a href="{{user.html_url}}">{{user.login}}</a>.
