@@ -1,23 +1,17 @@
-## commit
-- 改了一下UI
-- 重写了一下框架
-
-## dev
-- 用户体验(自用的小提示框)
-- 交互，修复`bug`
-
 ## 关于
+> Version: 1.2
 
-**fork自 [wuhaoworld](https://github.com/wuhaoworld)**
-- 感谢原作者提供思路，美化ing
-- 2017/9/27
-- **本项目依赖`issues`，所以不要在`issues`中随意提交代码。谢谢合作**
+**Fork自 [wuhaoworld](https://github.com/wuhaoworld)**
+
+    - 感谢原作者提供思路，美化ing
+    - 2017/9/27
+    - **本项目依赖`issues`，所以不要在`issues`中随意提交代码。谢谢合作**
 
 ## 部署方法
 
- 1. Fork 本项目，然后再新建一个用于存放 blog（issues）的 repo。 （fork 的项目是没有 issue 的，所以得新建个项目）
+ - Fork 本项目，然后再新建一个用于存放 blog（issues）的 repo。 （fork 的项目是没有 issue 的，所以得新建个项目）
 
- 2. 修改 gh-pages 分支下根目录的 config.js，填写好对应的博客名称，你自己的 github 用户名、对应项目名、多说 ID，保存。多说账号在这里申请http://duoshuo.com/
+ - 修改 gh-pages 分支下根目录的 config.js，填写好对应的博客名称，你自己的 github 用户名、对应项目名、多说 ID，保存。多说账号在这里申请http://duoshuo.com/
 
 
             var _config = {
