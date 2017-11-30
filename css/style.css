@@ -36,6 +36,14 @@ h2{
     margin: 0 auto 20px;
     width: 50%;
     text-align: center;
+    animation: top-b .5s;
+    transition: all .3s;
+}
+@keyframes top-b {
+    0%{
+        opacity: 0;
+        transform: translate(-10px,-50px);
+    }
 }
 #me{
     display: inline-block;
@@ -94,8 +102,16 @@ h2{
     width: 50%;
     margin: 20px auto;
     border-bottom: 1px solid #cacaca;
+    animation: content .5s;
     transition: all .3s;
 }
+@keyframes content {
+    0%{
+        opacity: 0;
+        transform: translate(-200px,0);
+    }
+}
+
 .postlist{
     margin: 20px 0;
     padding-left: 0;
@@ -103,6 +119,24 @@ h2{
 }
 .postlist a{
     color: #333;
+}
+ul.postlist li.postlist{
+    position: relative;
+}
+ul.postlist li.postlist:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: -10px;
+    width: 1px;
+    height: 100%;
+    opacity: 0;
+    background: #333;
+    transition: all .3s;
+}
+ul.postlist:hover li.postlist:before{
+    width: 5px;
+    background: #0b6ab8;
 }
 .datetime{
     float: right;
@@ -146,7 +180,4 @@ h2{
 }
 #time:before{
     content: "Today: ";
-}
-#time:after{
-    content: " By chenhonzhou";
 }
