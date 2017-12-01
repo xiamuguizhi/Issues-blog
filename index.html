@@ -26,19 +26,15 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </head>
 <body>
-<!--
-<div id="bg">
-    <img src="http://ww1.sinaimg.cn/large/c2a4d307gw1eoy9gdvjkqj211y0np441.jpg" alt="">
-</div>
--->
+<div id="line"></div>
 <div id="header">
   <h1 id="link">
       <a href="#">
-          <img src="https://avatars0.githubusercontent.com/u/30407568?s=460&v=4" alt="骚年，你的网速太差了" id="me">
+          <img src="images/head.png" alt="骚年，你的网速太差了" id="me">
       </a>
-    <br>
+      <br>
       <h5>
-          陈大大爱唠嗑
+         爱搬砖的陈大大
       </h5>
   </h1>
   <p>说话又不会说.就只有写代码这种,才维持得了生活,这样子.</p>
@@ -50,6 +46,11 @@
     <div id="time"></div>
 </div>
 <script type="text/ractive" id="listTpl">
+    <div class="windows" style="display: block;">
+        <div class="red"></div>
+        <div class="orange"></div>
+        <div class="green"></div>
+    </div>
     <ul class="postlist">
         {{#posts}}
         <li class="postlist"><i class="line"></i><a href="#post/{{number}}">{{title}}</a>
@@ -72,27 +73,6 @@
     {{/post}}
 </script>
 <script src="app.js"></script>
-<!--ca 画布-->
-<script type="text/javascript" src="js/canvas-particle.js"></script>
-<script type="text/javascript">
-      window.onload = function(){
-        //配置
-        var config = {
-            vx: 4,//点x轴速度,正为右，负为左
-            vy:  4,//点y轴速度
-            height: 2,//点高宽，其实为正方形，所以不宜太大
-            width: 2,
-            count: 100,//点个数
-            color: "0, 0, 0",//点颜色
-            stroke: "0,0,0",//线条颜色
-            dist: 6000,//点吸附距离
-            e_dist: 20000,//鼠标吸附加速距离
-            max_conn: 10//点到点最大连接数
-        }
-        //调用
-        CanvasParticle(config);
-    }
-</script>
  <script type="text/javascript">
         function current() {
             var d = new Date(),
