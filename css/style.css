@@ -69,18 +69,27 @@ h2{
     transition: all .3s;
 }
 #me:hover{
-    box-shadow: 1px 1px 30px #ccc;
+    box-shadow: 1px 1px 30px #aaaaaa;
     transform: rotate(30deg) translate(0,-10px);
 }
 #header h5{
+    position: relative;
+    display: inline-block;
     margin-bottom: 5px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 900;
 }
 #header p{
+    position: relative;
+    display: inline-block;
     padding: 5px 0 10px;
     font-size: 12px;
     color: #848484;
+    cursor: pointer;
+    transition: all .3s;
+}
+#header p:hover{
+    text-decoration: line-through;
 }
 #link a {
     display: inline-block;
