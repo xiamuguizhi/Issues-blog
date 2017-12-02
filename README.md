@@ -1,4 +1,4 @@
-<p align="center"><img src="README/v1.1.png /></p>
+<p align="center"> ![v1.1](README/v1.1.png) </p>
 <p align="center'>v1.1<p>
 
 ## 关于
