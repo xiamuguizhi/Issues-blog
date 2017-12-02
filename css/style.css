@@ -95,7 +95,6 @@ h2{
     transform: rotate(30deg) translate(0,-10px);
 }
 #header h5{
-    position: relative;
     display: inline-block;
     margin-bottom: 5px;
     font-size: 18px;
@@ -109,9 +108,6 @@ h2{
     color: #848484;
     cursor: pointer;
     transition: all .3s;
-}
-#header p:hover{
-    text-decoration: line-through;
 }
 #link a {
     display: inline-block;
