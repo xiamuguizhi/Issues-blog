@@ -16,4 +16,7 @@
     #me{
         width: 80px;
     }
+    #back{
+        display: none!important;
+    }
 }
