@@ -1,20 +1,44 @@
 <p align="center"><img src="README/v1.1.png"/></p>
-<p align="center'>v1.1<p>
-
-## 关于
 
 > 不断的提升，分享＝提升
 
 - Github: [chenhonzhou](http://github.com/chenhonzhou)
+
 - TXQQ:   [2915537708](tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2915537708)
+
 - Email: [chenhonzhou@gmail.com](https://www.google.com/gmail)
+
 - V2EX:  [chenhonzhou](https://www.v2ex.com/member/chenhonzhou)
+
 - bilibili: [HardDeams](https://space.bilibili.com/27013266?from=search&seid=3275070897980156250#!/index)
+
 - zhihu: [陈宏洲不是NPC](https://www.zhihu.com/people/ChenHonZhouRemix/activities)
+
 - 网易云: [HardDeams](http://music.163.com/#/user/home?id=266341607)
 
 ## Live
-[Log](README/Log.md)
+- v1.0
+  - Fork...
+  - UI...
+- v1.1
+  - UI...
+  - Mobile...
+  - 交互..
+
+## bug
+- v1.0
+  - `MD`语法渲染的问题
+    - 尝试用`css`来解决,就是加权重啦...
+    - 尝试用`node>hexo`来玩，后来有太多的bug,就不玩了
+- v1.1
+  - 已知bug
+    - 低分辨率下无法显示`buttom`
+        - 简单粗暴的设置默认显示`6`个，完美解决..
+    - 已知交互效果未改。。。
+    - 图片未能居中...
+    - 垃圾垃圾`MD`渲染.........
+        - 这个锅，`MD`不背..纯属垃圾浏览器渲染的问题..
+    - `#me`未实现`API`,尝试用`API`来玩
 
 ## 部署方法
 
