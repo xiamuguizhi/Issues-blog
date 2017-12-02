@@ -1,16 +1,19 @@
-/*
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:0 auto;
+@media screen and (max-width: 700px){
+    #fork,
+    #header p,
+    #header h5,
+    #copy,
+    .datetime{
+        display: none;
+    }
+    #header{
+        margin: 0 auto;
+    }
+    #container {
+        width: 100%;
+        margin: 0 auto 100px;
+    }
+    #me{
+        width: 80px;
     }
 }
-@media print {
-    table, pre {
-        page-break-inside: avoid;
-    }
-    pre {
-        word-wrap: break-word;
-    }
-}
-*/

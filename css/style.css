@@ -142,7 +142,7 @@ h2{
 #container {
     position: relative;
     width: 60%;
-    margin: 20px auto;
+    margin: 20px auto 100px;
     padding: 5px;
     box-shadow: -1px -1px 25px #ccc;
     border-bottom-left-radius: 2px;
