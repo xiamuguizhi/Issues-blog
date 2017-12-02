@@ -27,6 +27,9 @@
 </head>
 <body>
 <div id="line"></div>
+<a href="http://github.com/chenhonzhou/life-blog" id="fork" target="_blank">
+    <img src="images/fork.png" alt="">
+</a>
 <div id="header">
   <h1 id="link">
 
@@ -63,7 +66,11 @@
     </div>
     <ul class="postlist">
         {{#posts}}
-        <li class="postlist"><i class="line"></i><a href="#post/{{number}}">{{title}}</a>
+        <li class="postlist">
+        <a href="#post/{{number}}">
+            <i class="line"></i>
+            {{title}}
+        </a>
         <span class="datetime">
         <!--<img src="{{user.avatar_url}}&s=18" class="avatar">.-->
         <a href="{{user.html_url}}">{{user.login}}</a>.

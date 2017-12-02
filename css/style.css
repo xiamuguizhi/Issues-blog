@@ -44,6 +44,26 @@ h2{
         opacity: 1;
     }
 }
+#fork{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 100px;
+    height: 100px;
+    filter: blur(5px);
+    opacity: 1;
+    transition: all .3s;
+}
+#fork img{
+    display: block;
+    border: none;
+    box-shadow: 0 0 0;
+    margin: 0;
+}
+#fork:hover{
+    opacity: 1;
+    filter: blur(0);
+}
 #header{
     position: relative;
     margin: 0 auto 20px;
@@ -62,10 +82,12 @@ h2{
     position: relative;
     display: inline-block;
     margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #878787;
     width: 100px;
     border-radius: 50%;
     cursor: pointer;
-    background: #dfdfdf;
+    background: #fff;
     transition: all .3s;
 }
 #me:hover{
@@ -123,7 +145,7 @@ h2{
 }
 #container {
     position: relative;
-    width: 50%;
+    width: 60%;
     margin: 20px auto;
     padding: 5px;
     box-shadow: -1px -1px 25px #ccc;
@@ -190,7 +212,7 @@ h2{
     opacity: 0;
     transition: all .3s;
 }
-ul.postlist li.postlist:hover .line{
+ul.postlist li.postlist a:hover .line{
     opacity: 1;
     left: -10px;
 }
