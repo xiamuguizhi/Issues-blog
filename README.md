@@ -1,7 +1,10 @@
-<p algin="center"><img src="README/v1.1.png /></p>
+<p align="center"><img src="README/v1.1.png /></p>
 <p align="center'>v1.1<p>
+
 ## 关于
+
 > 不断的提升，分享＝提升
+
 - Github: [chenhonzhou](http://github.com/chenhonzhou)
 - TXQQ:   [2915537708](tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2915537708)
 - Email: [chenhonzhou@gmail.com](https://www.google.com/gmail)
