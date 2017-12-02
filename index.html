@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,6 +57,9 @@
 <div id="copy">
     <div id="time"></div>
 </div>
+<div id="back">
+    <a href="javascript:">返回顶部</a>
+</div>
 <script type="text/ractive" id="listTpl">
     <div class="windows" style="display: block;">
         <div class="red"></div>
@@ -89,7 +92,8 @@
     {{/post}}
 </script>
 <script src="app.js"></script>
- <script type="text/javascript">
+<!--time-->
+<script type="text/javascript">
         function current() {
             var d = new Date(),
                 str = '';
@@ -104,6 +108,27 @@
     setInterval(function() {
         $("#time").html(current)
     }, 1000);
+</script>
+<!--返回顶部-->
+<script type="text/javascript">
+        $(function(){
+           $('#back').hide();        //隐藏go to top按钮
+            $(window).scroll(function(){
+                    // console.log($(this).scrollTop());
+
+                  //当window的scrolltop距离大于1时，go to
+                    if($(this).scrollTop() > 100){
+                            $('#back').fadeIn();
+                     }else{
+                            $('#back').fadeOut();
+                    }
+               });
+
+             $('#back a').click(function(){
+                 $('html ,body').animate({scrollTop: 0}, 300);
+                  return false;
+              });
+        });
 </script>
 </body>
 </html>

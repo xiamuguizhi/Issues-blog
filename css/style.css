@@ -248,7 +248,7 @@ ul.postlist li.postlist a:hover{
     left: 0;
     width: 100%;
     height: 30px;
-    background: rgba(0,0,0,.9);
+    background: rgba(0,0,0,0);
     text-align: center;
 }
 #time{
@@ -258,3 +258,46 @@ ul.postlist li.postlist a:hover{
 #time:before{
     content: "Today: ";
 }
+#back{
+    position: fixed;
+    bottom: 20px;
+    right: 15%;
+    text-align: center;
+}
+#back a{
+    position: relative;
+    display: block;
+    height: 25px;
+    padding: 5px;
+    color: #fff;
+    background: #333;
+}
+#back a:hover{
+    text-decoration: none;
+}
+#back a:after{
+    content: "^";
+    position: absolute;
+    top:-20px;
+    left:0;
+    width: 0;
+    height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
