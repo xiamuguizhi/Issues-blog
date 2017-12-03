@@ -1,22 +1,45 @@
 @media screen and (max-width: 700px){
+    body{
+        background: #fff url("../images/bg.jpg");
+    }
     #fork,
     #header p,
-    #header h5,
     #copy,
+    #header h5,
     .datetime{
         display: none;
     }
     #header{
-        margin: 0 auto;
+        width: 100%;
+        background: orangered url("../images/bg.jpg");
     }
     #container {
         width: 100%;
         margin: 0 auto 100px;
+        background: #fff;
     }
     #me{
         width: 80px;
+        margin: 0;
+    }
+    #me:hover{
+        transform: none;
     }
     #back{
+        right: 5%;
+    }
+    #back a{
+        position: relative;
+        display: block;
+        width: 42px;
+        height: 42px;
+        line-height: normal;
+        border-radius: 5px;
+    }
+    #link a{
+        margin: 5px auto;
+    }
+    #header br{
         display: none!important;
     }
 }

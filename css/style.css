@@ -69,13 +69,13 @@ h2{
     margin: 0 auto 20px;
     width: 50%;
     text-align: center;
-    animation: top-b 1s;
+    animation: top-b 1.5s;
     transition: all .3s;
 }
 @keyframes top-b {
     0%{
         opacity: 0;
-        transform: translate(0,-100px);
+        transform: translate(0,-100px) skew(100deg,50deg);
     }
 }
 #me{
@@ -153,7 +153,7 @@ h2{
 @keyframes content {
     0%{
         opacity: 0;
-        transform: translate(-200px,0);
+        transform: translate(-1000px,0) scale(1.5,1.5);
     }
 }
 .windows{
@@ -265,7 +265,6 @@ ul.postlist li.postlist a:hover{
     text-align: center;
 }
 #back a{
-    display: block;
     line-height: 20px;
     font-size: 12px;
     padding: 5px;
@@ -279,7 +278,6 @@ ul.postlist li.postlist a:hover{
     transform: translate(0,-10px);
     box-shadow: 0 10px 10px #aaaaaa;
 }
-
 
 
 
