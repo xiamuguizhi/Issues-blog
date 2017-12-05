@@ -1,6 +1,6 @@
 @media screen and (max-width: 700px){
     body{
-        background: #fff url("../images/bg.jpg");
+        background: #fff url("../images/random.jpg");
     }
     #fork,
     #header p,
@@ -11,7 +11,7 @@
     }
     #header{
         width: 100%;
-        background: orangered url("../images/bg.jpg");
+        background: orangered url("../images/random.jpg");
     }
     #container {
         width: 100%;
