@@ -91,8 +91,8 @@ h2{
     transition: all .3s;
 }
 #me:hover{
-    box-shadow: 1px 1px 30px #aaaaaa;
-    transform: rotate(30deg) translate(0,-10px);
+    box-shadow: 1px 1px 30px #333;
+    transform: rotate(30deg);
 }
 #header h5{
     display: inline-block;
