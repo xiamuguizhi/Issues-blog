@@ -92,7 +92,7 @@ h2{
 }
 #me:hover{
     box-shadow: 1px 1px 30px #333;
-    transform: rotate(30deg);
+    transform: rotate(360deg);
 }
 #header h5{
     display: inline-block;
