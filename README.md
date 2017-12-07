@@ -1,6 +1,53 @@
 <p align="center"><img src="README/v1.1.png"/></p>
 
-> 不断的提升，分享＝提升
+
+
+# 关于这个博客
+
+写博客只是记录自己的开发记录,还有生活
+
+从一开始有自己写一个博客的的想法，自己当时只为写出一个用来记录的日常的生活
+
+苦与乐，快乐与否，开心与否，并记录在此，若干年后，自己重新打开博客的时候，会看到自己的以前的生活
+
+做一个会生活的，学会生活，高质量的生活，
+
+所以这个博客还是主要是功能不是好看的ＵＩ，自从上次写了个好看的ＵＩ，一发不可收拾
+
+沉迷于ＵＩ，无法自拔
+
+所以，我会把我功能性的东西写好，／*此处１０００字检讨飞过*/
+
+现在起，加油吧，少年，然后你已经不少年了
+
+你已经从昨天(12/06)日的时候不是一位16岁的少年了，
+
+而是一个１７岁的少年了，你已经不小了，该为自己的梦想而奋斗了．
+
+说一下我现在的技术
+
+> HTML   = 50%
+
+> CSS    = 40%
+
+> JS     = 0%
+
+> GIT    = 60%
+
+> PS     = 80%
+
+> NodeJS = 0%
+
+
+说一下我现在的梦想
+
+> 活出自己想要活出来的样子打发打发地方大幅度发奋斗　
+
+
+
+
+
+# Link
 
 - Github: [chenhonzhou](http://github.com/chenhonzhou)
 
@@ -10,11 +57,13 @@
 
 - V2EX:  [chenhonzhou](https://www.v2ex.com/member/chenhonzhou)
 
-- bilibili: [HardDeams](https://space.bilibili.com/27013266?from=search&seid=3275070897980156250#!/index)
+- bilibili: [HardDeams](https://space.bilibili.com/27013266/#/)
 
 - zhihu: [陈宏洲不是NPC](https://www.zhihu.com/people/ChenHonZhouRemix/activities)
 
 - 网易云: [HardDeams](http://music.163.com/#/user/home?id=266341607)
+
+
 
 ## Live
 - v1.0
@@ -24,6 +73,12 @@
   - UI...
   - Mobile...
   - 交互..
+
+- v1.2
+  - 微小改变
+
+- vl.3
+  - 功能性
 
 ## Bug
 - v1.0
@@ -42,6 +97,16 @@
 - v1.2
   - 添加`返回顶部`按钮
   - 请求过大的使用`token`，方便调试
+
+- v1.3
+  - 添加`about.html` + `time.html`
+    - 关于我页面，用ＭＤ渲染
+
+    - 时间线写一个每天发生什么事，尝试用`ifname`来写
+
+  - 删除无用的交互性的东西，注重内容
+
+  - ＭＤ渲染出来的莫名还是会用ｂｕｇ，还是就是内容不完善，所以把ＭＤ渲染重新写一次
 
 ## 部署方法
 
