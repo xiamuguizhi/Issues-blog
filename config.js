@@ -1,5 +1,5 @@
 var _config = {
-    blog_name       : '陈宏洲的博客',         // 博客名称
+    blog_name       : "YoungDog'Blog",         // 博客名称
     owner           : 'chenhonzhou',           // github 用户名
     repo            : 'blog',// github 中对应项目名
     //duoshuo_id      : 'hello1234',            // 在第三方评论插件多说申请站点的子域名

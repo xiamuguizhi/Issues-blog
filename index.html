@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>加载中......</title>
     <!--md渲染-->
-    <link rel='stylesheet' href='css/markdown.css' type='text/css'/>
-    <link rel='stylesheet' href='css/style.css' type='text/css'/>
+    <link rel='stylesheet' href='css/blog/markdown.css' type='text/css'/>
+    <link rel='stylesheet' href='css/blog/style.css' type='text/css'/>
     <link rel="stylesheet" href="css/base.css" type="text/css">
-    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <link rel="icon" href="favicon.svg">
+    <link rel="icon" href="favicon.ico">
     <!--移动端-->
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/blog/mobile.css">
     <!--jq-->
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
     <!--路由解析-->
@@ -29,20 +28,17 @@
 </head>
 <body>
 <div id="line"></div>
-<a href="http://github.com/chenhonzhou/blog" id="fork" target="_blank">
-    <img src="images/fork.png" alt="">
-</a>
 <div id="header">
   <h1 id="link">
 
       <a href="javascript:;" onClick="javascript :history.back(-1);">
-          <img src="https://avatars0.githubusercontent.com/u/30407568?s=460&v=4" alt="骚年，你的网速太差了" id="me">
+          <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=2915537708&spec=100" alt="骚年，你的网速太差了" id="me">
       </a>
 
       <br>
 
       <h5>
-         陈大大哦了&trade;
+         YoungDog&trade;
       </h5>
 
       <br>
@@ -51,13 +47,16 @@
           说话又不会说.就只有写代码这种,才维持得了生活,这样子.
       </p>
 
+      <dl class="link"><!--这里语法忘记了.暂时写出来一个Demo-->
+          <dd><a href="index.html">博客文章</a></dd>
+          <dd><a href="view/timeline.html">时间线</a></dd>
+          <dd><a href="http://github.com/chenhonzhou" target="_blank">Github</a></dd>
+      </dl>
+
   </h1>
 </div>
 <div id="container">
     <center><img src="loading.gif" alt="loading" class="loading"></center>
-</div>
-<div id="copy">
-    <div id="time"></div>
 </div>
 <div id="back">
     <a href="javascript:">
@@ -65,7 +64,7 @@
     </a>
 </div>
 <script type="text/ractive" id="listTpl">
-    <div class="windows" style="display: block;">
+    <div class="windows">
         <div class="red"></div>
         <div class="orange"></div>
         <div class="green"></div>
@@ -96,23 +95,6 @@
     {{/post}}
 </script>
 <script src="app.js"></script>
-<!--time-->
-<script type="text/javascript">
-        function current() {
-            var d = new Date(),
-                str = '';
-            str += d.getFullYear() + '/'; //获取当前年份
-            str += d.getMonth() + 1 + '/'; //获取当前月份（0——11）
-            str += d.getDate() + '&nbsp;';
-            str += d.getHours() + ':';
-            str += d.getMinutes() + ':';
-            str += d.getSeconds();
-            return str;
-        };
-    setInterval(function() {
-        $("#time").html(current)
-    }, 1000);
-</script>
 <!--返回顶部-->
 <script type="text/javascript">
         $(function(){

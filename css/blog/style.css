@@ -1,25 +1,3 @@
-/*滚动条 start*/
-      ::-webkit-scrollbar {
-        width: 10px;
-        height: 4px;
-        background-color: #F5F5F5;
-      }
-      /*定义滚动条轨道 内阴影+圆角*/
-      ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        background: #fff ;
-      }
-      /*定义滑块 内阴影+圆角*/
-      ::-webkit-scrollbar-thumb {
-        border-radius: 3px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-        background-color:rgba(58, 63, 65, 0.7);
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        border-radius: 3px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-        background-color:rgba(9, 9, 9, 1);
-      }
 html,body{
     width: 100%;
     height: 100%;
@@ -66,29 +44,9 @@ h2{
         opacity: 1;
     }
 }
-#fork{
-    position: fixed;
-    top:0;
-    right:0;
-    width: 100px;
-    height: 100px;
-    filter: blur(5px);
-    opacity: 1;
-    transition: all .3s;
-}
-#fork img{
-    display: block;
-    border: none;
-    box-shadow: 0 0 0;
-    margin: 0;
-}
-#fork:hover{
-    opacity: 1;
-    filter: blur(0);
-}
 #header{
     position: relative;
-    margin: 0 auto 20px;
+    margin: 10px auto 0;
     width: 50%;
     text-align: center;
     animation: top-b 1.5s;
@@ -97,21 +55,32 @@ h2{
 @keyframes top-b {
     0%{
         opacity: 0;
-        transform: translate(0,-100px) skew(100deg,50deg);
     }
+}
+#link a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: #333;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px #ccc;
+    cursor: pointer;
+    transition: all .2s;
 }
 #me{
     display: inline-block;
-    margin: 8px 0;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     width: 100px;
     border-radius: 50%;
     cursor: pointer;
     background: #fff;
+    box-shadow: 10px 10px 20px #333;
     transition: all 1s;
 }
 #me:hover{
-    box-shadow: 1px 1px 30px #333;
     transform: rotate(360deg);
 }
 #header h5{
@@ -128,19 +97,6 @@ h2{
     color: #848484;
     cursor: pointer;
     transition: all .3s;
-}
-#link a {
-    display: inline-block;
-    font-size: 25px;
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-}
-#link a:hover{
-  text-decoration: none;
-  color: #333;
-  transition: all .2s;
 }
 .avatar{
 	display: inline;
@@ -161,19 +117,17 @@ h2{
 }
 #container {
     position: relative;
-    width: 60%;
-    margin: 20px auto 100px;
+    width: 50%;
+    margin: 10px auto 50px;
     padding: 5px;
-    box-shadow: -1px -1px 25px #ccc;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    animation: content 1s;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    animation: content 2s;
     transition: all .3s;
 }
 @keyframes content {
     0%{
         opacity: 0;
-        transform: translate(-1000px,0) scale(1.5,1.5);
     }
 }
 .windows{
@@ -185,6 +139,7 @@ h2{
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     background: rgba(0,0,0,.8);
+    display: none;
 }
 .red,
 .orange,
@@ -211,9 +166,10 @@ h2{
 }
 .postlist{
     position: relative;
-    margin: 20px 0;
-    padding-left: 0;
-    list-style: none;
+    margin: 10px 0;
+    margin-left: 10px;
+    padding-left: 10px;
+    list-style: decimal-leading-zero;
 }
 .postlist a{
     color: #333;
@@ -230,10 +186,15 @@ h2{
 }
 ul.postlist li.postlist a:hover .line{
     opacity: 1;
+    background: orangered;
     left: -10px;
 }
 ul.postlist li.postlist a:hover{
+    color: orangered;
     text-decoration: none;
+}
+ul.postlist li.postlist{
+    margin: 15px 0;
 }
 .datetime{
     float: right;
@@ -262,15 +223,6 @@ ul.postlist li.postlist a:hover{
     box-shadow: 1px 1px 5px #333;
     transition: all .2s ease-in;
 }
-#copy{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background: rgba(0,0,0,0);
-    text-align: center;
-}
 #time{
     color: #fff;
     line-height: 30px;
@@ -297,4 +249,13 @@ ul.postlist li.postlist a:hover{
     border: 3px;
     transform: translate(0,-10px);
     box-shadow: 0 10px 10px #aaaaaa;
+}
+.link{
+    border-top: 1px solid #cdcdcd;
+    height: 40px;
+}
+.link dd{
+    display: inline-block;
+    margin: 5px 10px;
+    line-height: 40px;
 }
