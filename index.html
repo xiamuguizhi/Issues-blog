@@ -9,6 +9,7 @@
     <link rel='stylesheet' href='css/blog/markdown.css' type='text/css'/>
     <link rel='stylesheet' href='css/blog/style.css' type='text/css'/>
     <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <!--移动端-->
     <link rel="stylesheet" href="css/blog/mobile.css">
@@ -28,7 +29,7 @@
 </head>
 <body>
 <div id="line"></div>
-<div id="header">
+<div id="header" class="fl">
   <h1 id="link">
 
       <a href="javascript:;" onClick="javascript :history.back(-1);">
@@ -44,18 +45,25 @@
       <br>
 
       <p>
-          说话又不会说.就只有写代码这种,才维持得了生活,这样子.
+          说话又不会说.就只有写代码这种,
+          <br>
+          才维持得了生活,这样子.
       </p>
-
+      <br>
+      <p>
+        <i class="fa fa-grav"></i>
+        湖南,湘西
+      </p>
       <dl class="link"><!--这里语法忘记了.暂时写出来一个Demo-->
-          <dd><a href="index.html">博客文章</a></dd>
-          <dd><a href="view/timeline.html">时间线</a></dd>
-          <dd><a href="http://github.com/chenhonzhou" target="_blank">Github</a></dd>
+          <dd><a href="index.html"><i class="fa fa-wpexplorer"></i>文章</a></dd>
+          <dd><a href="view/timeline.html"><i class="fa fa-bed"></i>说说</a></dd>
+          <dd><a href="#"><i class="fa fa-bug"></i>项目</a></dd>
+          <dd><a href="#"><i class="fa fa-telegram"></i>友链</a></dd>
       </dl>
 
   </h1>
 </div>
-<div id="container">
+<div id="container" class="fl">
     <center><img src="loading.gif" alt="loading" class="loading"></center>
 </div>
 <div id="back">
@@ -116,5 +124,6 @@
               });
         });
 </script>
+
 </body>
 </html>
