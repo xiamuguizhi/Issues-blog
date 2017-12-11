@@ -49,17 +49,25 @@
           <br>
           才维持得了生活,这样子.
       </p>
+
       <br>
+
       <p>
         <i class="fa fa-grav"></i>
         湖南,湘西
       </p>
+
       <dl class="link"><!--这里语法忘记了.暂时写出来一个Demo-->
           <dd><a href="index.html"><i class="fa fa-wpexplorer"></i>文章</a></dd>
           <dd><a href="view/timeline.html"><i class="fa fa-bed"></i>说说</a></dd>
           <dd><a href="#"><i class="fa fa-bug"></i>项目</a></dd>
           <dd><a href="#"><i class="fa fa-telegram"></i>友链</a></dd>
       </dl>
+
+      <div id="info">
+        <div id="time"></div>
+        <iframe width='225' scrolling='no' height='80' frameborder='0' allowtransparency='true' src='http://i.tianqi.com/index.php?c=code&id=8&icon=3&py=luxi&num=3&site=12'></iframe>
+      </div>
 
   </h1>
 </div>
@@ -124,6 +132,22 @@
               });
         });
 </script>
-
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript">
+    function current() {
+      var d = new Date(),
+        str = '';
+      str += d.getFullYear() + '/'; //获取当前年份
+      str += d.getMonth() + 1 + '/'; //获取当前月份（0——11）
+      str += d.getDate() + '&nbsp;';
+      str += d.getHours() + ':';
+      str += d.getMinutes() + ':';
+      str += d.getSeconds();
+      return str;
+    }
+    setInterval(function() {
+      $("#time").html(current)
+    }, 1000);
+  </script>
 </body>
 </html>

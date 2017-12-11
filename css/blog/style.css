@@ -75,6 +75,19 @@ h2{
     cursor: pointer;
     transition: all .2s;
 }
+#header #info{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+#header #time{
+  color: #333;
+  margin: 5px 0;
+}
+#header #time:before{
+  content: "今时:"
+}
 #me{
     display: inline-block;
     margin: 0;
@@ -226,13 +239,6 @@ ul.postlist li.postlist{
     text-decoration: none;
     box-shadow: 1px 1px 5px #333;
     transition: all .2s ease-in;
-}
-#time{
-    color: #fff;
-    line-height: 30px;
-}
-#time:before{
-    content: "Today: ";
 }
 #back{
     position: fixed;
