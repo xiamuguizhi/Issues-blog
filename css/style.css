@@ -100,7 +100,6 @@ h2{
     border-radius: 50%;
     cursor: pointer;
     background: #fff;
-    box-shadow: 10px 10px 20px #333;
     transition: all 1s;
 }
 #me:hover{
@@ -121,16 +120,6 @@ h2{
     color: #848484;
     cursor: pointer;
     transition: all .3s;
-}
-.avatar{
-	display: inline;
-	margin: 0px 0px;
-}
-.create_at{
-  color: #999;
-  display: block;
-  margin: 15px 0;
-  font-size: 12px;
 }
 .loading{
   border: none;
@@ -185,90 +174,6 @@ h2{
 .green{
     left: 55px;
     background: green;
-}
-.postlist{
-    position: relative;
-    margin: 10px 0;
-    margin-left: 10px;
-    padding-left: 10px;
-}
-.postlist a{
-    color: #333;
-}
-.line{
-    position: absolute;
-    top: 50%;
-    left:-10%;
-    width: 80px;
-    height: 1px;
-    background: #000;
-    opacity: 0;
-    transition: all .3s;
-}
-ul.postlist{
-  width: 100%;
-}
-ul.postlist li.postlist a:hover .line{
-    opacity: 1;
-    background: orangered;
-    left: -10px;
-}
-ul.postlist li.postlist a:hover{
-    color: orangered;
-    text-decoration: none;
-}
-ul.postlist li.postlist{
-    margin: 15px 0;
-    padding: 10px;
-    border-bottom: 1px solid #f9f2f2;
-}
-ul.postlist li.postlist em{
-  position: absolute;
-  top:20%;
-  left:-10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgb(61, 53, 53);
-}
-ul.postlist li.postlist em:before{
-  content: "";
-  position: absolute;
-  top:0;
-  left:20%;
-  width: 5px;
-  height: 40px;
-  background: rgba(61, 53, 53,.5);
-}
-.datetime{
-    float: right;
-    color: #999;
-    font-family: 'Open Sans', sans-serif;
-}
-.datetime i{
-  padding: 5px;
-}
-.prev{
-  float: left;
-}
-.next{
-  float: right;
-}
-.prev,
-.next{
-    margin-top: 20px;
-    padding: 5px 10px;
-    background: #333;
-    color: #fff;
-    transition: all .3s;
-}
-.prev:hover,
-.next:hover{
-    text-indent: 1em;
-    background: #333;
-    text-decoration: none;
-    box-shadow: 1px 1px 5px #333;
-    transition: all .2s ease-in;
 }
 #back{
     position: fixed;
@@ -345,7 +250,26 @@ ul.postlist li.postlist em:before{
   color: #f14747;
 }
 .link dd a i{
-  padding: 5px;
+    padding: 5px;
   margin-right: 8px;
   font-size: 18px;
+}
+.show-list{
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #e9e6e6;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #ded9d9;
+}
+.show-list .commit{
+  padding-left: 20px;
+  border-left: 5px solid #5d5d5d;
+  color: #5d5d5d;
+}
+.show-list .con{
+  text-indent: 1em;
+  line-height: 20px;
+  font-size: 12px;
+  margin: 5px;
+  padding: 15px;
 }

@@ -1,4 +1,4 @@
-<p align="center"><img src="README/v1.2.png"/></p>
+<p align="center"><img src="README/v1.4.png"/></p>
 
 
 

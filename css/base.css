@@ -1,7 +1,7 @@
 /*Css base+reset+style.css*/
 /*滚动条 start*/
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
   height: 4px;
   background-color: #F5F5F5;
 }
@@ -19,7 +19,7 @@
 ::-webkit-scrollbar-thumb:hover {
   border-radius: 3px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color:rgba(9, 9, 9, 1);
+  background-color:rgb(241, 71, 71);
 }
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
