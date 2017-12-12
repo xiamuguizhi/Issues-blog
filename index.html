@@ -87,7 +87,7 @@
         湖南,湘西
       </p>
 
-      <dl class="link"><!--这里语法忘记了.暂时写出来一个Demo-->
+      <dl class="link"><!--Date:2017/12/12-->
           <dd><a href="#"><i class="fa fa-wpexplorer"></i>文章</a></dd>
           <dd><a href="view/showmood.html"><i class="fa fa-bed"></i>说说</a></dd>
           <dd><a href="view/project.html"><i class="fa fa-code"></i>项目</a></dd>
@@ -95,17 +95,19 @@
       </dl>
 
       <div id="info">
-        <iframe width='150' scrolling='no' height='60' frameborder='0' allowtransparency='true' src='http://i.tianqi.com/index.php?c=code&id=8&icon=3&py=huaihua&num=3&site=12'></iframe>
+        <iframe width='120' scrolling='no' height='60' frameborder='0' allowtransparency='true' src='http://i.tianqi.com/index.php?c=code&id=8&icon=3&py=huaihua&num=3&site=12'></iframe>
         <div id="time"></div>
       </div>
 
   </h1>
 </div>
+<!--
 <div class="windows">
     <div class="red"></div>
     <div class="orange"></div>
     <div class="green"></div>
 </div>
+-->
 <div id="container" class="fl">
     <center><img src="loading.gif" alt="loading" class="loading"></center>
 </div>
@@ -114,6 +116,13 @@
         <i class="fa fa-hand-o-up"></i>
     </a>
 </div>
+
+<a href="javascript:;" id="music"><i class="fa fa-list"></i></a>
+
+<div id="musicbox">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=1000 height=450 src="http://music.163.com/outchain/player?type=0&id=2003307789&auto=0&height=430"></iframe>
+</div>
+
 <script type="text/ractive" id="listTpl">
     <ul class="postlist">
         {{#posts}}
@@ -182,6 +191,14 @@
     setInterval(function() {
       $("#time").html(current)
     }, 1000);
+  </script>
+  <!--二级菜单-->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#music").click(function(){
+    $("#musicbox").toggle(300);
+    });
+  });
   </script>
 </body>
 </html>
