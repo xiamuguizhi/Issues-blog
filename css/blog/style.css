@@ -356,7 +356,7 @@ ul.postlist li.postlist:hover{
   transition: all .3s;
 }
 #music:hover{
-  transform: translate(-10px,0);
+  transform: scale(1.2,1.2);
   color: #333;
 }
 #musicbox{
