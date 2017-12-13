@@ -328,11 +328,13 @@ ul.postlist li.postlist:hover{
   width: 10px;
   height: 1px;
   background: #fff;
+  opacity: 0;
   transition: all .3s;
 }
 .link dd:hover a:before{
   right: -5%;
   width: 50%;
+  opacity: 1;
   background: #f14747;
 }
 .link dd:hover a{
@@ -349,11 +351,16 @@ ul.postlist li.postlist:hover{
 }
 #music{
   position: fixed;
-  top: 1%;
+  top: 0;
   right:1%;
   font-size: 20px;
   color: rgb(158, 157, 157);
   transition: all .3s;
+}
+#music img{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
 #music:hover{
   transform: scale(1.2,1.2);

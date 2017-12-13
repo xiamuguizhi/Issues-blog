@@ -24,7 +24,11 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <style type="text/css">
     @media screen and (max-width: 700px){
-      .windows{
+      .windows,
+      #music,
+      .link,
+      #info,
+      .datetime{
         display: none;
       }
       #header{
@@ -37,19 +41,10 @@
       #header p{
         color: #fff;
       }
-      .link{
-        display: none;
-      }
-      #info{
-        display: none;
-      }
       #container,
       ul.postlist{
         width: 100%;
         margin:0;
-      }
-      .datetime{
-        display: none;
       }
       ul.postlist li.postlist{
         text-indent: 1em;
@@ -117,10 +112,12 @@
     </a>
 </div>
 
-<a href="javascript:;" id="music"><i class="fa fa-arrow-left"></i></a>
+<a href="javascript:;" id="music">
+  <img src="music.svg" alt="">
+</a>
 
 <div id="musicbox">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=1000 height=450 src="http://music.163.com/outchain/player?type=0&id=2003307789&auto=0&height=430"></iframe>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=440561933&auto=0&height=430"></iframe>
 </div>
 
 <script type="text/ractive" id="listTpl">
