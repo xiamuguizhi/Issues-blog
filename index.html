@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,12 +23,19 @@
           href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <style type="text/css">
+    @media screen and (max-width: 1100px){
+        #time{
+            display: none;
+        }
+    }
     @media screen and (max-width: 700px){
       .windows,
       #music,
       .link,
       #info,
-      .datetime{
+      .datetime,
+      .header-table,
+      #time{
         display: none;
       }
       #header{
@@ -45,9 +51,6 @@
       #header p{
         display: none;
       }
-      #container{
-        border-left: 3px solid rgb(45, 211, 227);
-      }
       #container,
       ul.postlist{
         width: 100%;
@@ -59,6 +62,18 @@
       #link a{
         border: none;
         box-shadow: none;
+      }
+      #back{
+          background: #000;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+      }
+      #back a{
+          color: #fff;
+      }
+      #back a:hover{
+          box-shadow: none;
       }
     }
     </style>
@@ -80,30 +95,23 @@
 
       <br>
 
-      <p>
-          说话又不会说.就只有写代码这种,
-          <br>
-          才维持得了生活,这样子.
-      </p>
+      <p>反人类社会的智障!</p>
 
       <br>
 
       <p>
-        <i class="fa fa-grav"></i>
+        <i class="fa fa-map-marker"></i>
         湖南,湘西
       </p>
 
       <dl class="link"><!--Date:2017/12/12-->
-          <dd><a href="#"><i class="fa fa-wpexplorer"></i>文章</a></dd>
-          <dd><a href="view/showmood.html"><i class="fa fa-bed"></i>说说</a></dd>
-          <dd><a href="view/project.html"><i class="fa fa-code"></i>项目</a></dd>
-          <dd><a href="view/firends.html"><i class="fa fa-telegram"></i>友链</a></dd>
+          <dd><a href="javascript:" id="post" class="active">博客文章</a></dd>
+          <dd><a href="javascript:" id="mood">我的说说</a></dd>
+          <dd><a href="javascript:" id="project">所有项目</a></dd>
+          <dd><a href="javascript:" id="about">关于我</a></dd>
       </dl>
 
-      <div id="info">
-        <iframe width='120' scrolling='no' height='60' frameborder='0' allowtransparency='true' src='http://i.tianqi.com/index.php?c=code&id=8&icon=3&py=huaihua&num=3&site=12'></iframe>
-        <div id="time"></div>
-      </div>
+      <div id="time"></div>
 
   </h1>
 </div>
@@ -117,6 +125,118 @@
 <div id="container" class="fl">
     <center><img src="loading.gif" alt="loading" class="loading"></center>
 </div>
+
+<div class="mood">
+        <div class="show-list">
+            <div class="commit">
+                2017年12月14日 09:38
+            </div>
+            <div class="con">
+                <p>今天早上是代码课，从早上到第二节课</p>
+                <p>我像往常一样，玩着自己的</p>
+                <p>早上我感到一种孤独感，我自己也喜欢这种孤独感，所以我自己坐到了最后一排</p>
+                <p>有点想哭，很孤独</p>
+                <p>我现在已经放弃读书了</p>
+                <p>我不知道以后会不会后悔，但我知道我只能这样了</p>
+                <p>这个学校已经没有我所可依赖的了</p>
+                <p>除了每天的吃饭时间，其他时间我都无所谓了</p>
+                <p>最后表示一句:去ＴＭ的社会!</p>
+            </div>
+        </div>
+        <div class="show-list">
+            <div class="commit">
+                2017年12月11日 18:43
+            </div>
+            <div class="con">
+                <p>现在是第一节自习，我现在带个耳机</p>
+                <p>是班主任的课，所以我把板凳放下来着玩</p>
+                <p>以后这个就是我用来记录事件的秘密仓库了</p>
+                <p>可以是日记，也可以是大事件</p>
+            </div>
+        </div>
+</div>
+
+<div class="project">
+    <div class="show-list">
+        <div class="commit">
+            <a href="http://github.com/chenhonzhou/chenhonzhou.github.io" target="_blank">chenhonzhou.github.io</a>
+        </div>
+        <ul class="con">
+            <li>ver: 3.4.0</li>
+            <li>Power: 80%</li>
+            <li>Tips: 我的第一个项目</li>
+        </ul>
+    </div>
+    <div class="show-list">
+        <div class="commit">
+            <a href="http://github.com/chenhonzhou/blog" target="_blank">blog</a>
+        </div>
+        <ul class="con">
+            <li>ver: 1.4.0</li>
+            <li>Power: 100%</li>
+            <li>Tips:Github_Pages+Issues</li>
+        </ul>
+    </div>
+    <div class="show-list">
+        <div class="commit">
+            <a href="http://github.com/chenhonzhou/qq-ui" target="_blank">QQ-ui</a>
+        </div>
+        <ul class="con">
+            <li>Power: 0%</li>
+            <li>Tips:新挖的坑,没时间写/手动滑稽</li>
+        </ul>
+    </div>
+    <div class="show-list">
+        <div class="commit">
+            <a href="http://github.com/chenhonzhou/" target="_blank">JS-Loading</a>
+        </div>
+        <ul class="con">
+            <li>Power: 0%</li>
+            <li>Tips:进行时...</li>
+        </ul>
+    </div>
+    <div class="show-list">
+        <div class="commit">
+            <a href="https://github.com/chenhonzhou/Super-GirlFirends" target="_blank">Super-GirlFirends</a>
+        </div>
+        <ul class="con">
+            <li>Power: 0%</li>
+            <li>Tips:My girlfriend, you can't peek 2333333</li>
+        </ul>
+    </div>
+    <div class="show-list">
+        <div class="commit">
+            <a href="https://github.com/chenhonzhou/MarkDown-Preview" target="_blank">MarkDown-Preview</a>
+        </div>
+        <ul class="con">
+            <li>Power: 0%</li>
+            <li>Tips:no.0</li>
+        </ul>
+    </div>
+    <div class="show-list">
+        <div class="commit">
+            <a href="https://github.com/chenhonzhou/Linux-Deepin-Beautiful" target="_blank">Linux-Deepin-Beautiful</a>
+        </div>
+        <ul class="con">
+            <li>Power: 0%</li>
+            <li>Tips:什么都没有，只有一个脚本</li>
+        </ul>
+    </div>
+    <div class="show-list">
+        <div class="commit">
+            <a href="https://github.com/chenhonzhou/we27" target="_blank">WE27</a>
+        </div>
+        <ul class="con">
+            <li>Power: 0%</li>
+            <li>Tips:班级网站，学了JS在填坑</li>
+        </ul>
+    </div>
+</div>
+
+<div class="about">
+    <iframe src="http://chenhonzhou.github.io/DEMO/about" frameborder="0" width="100%" height="1000px"></iframe>
+</div>
+
 <div id="back">
     <a href="javascript:">
         <i class="fa fa-hand-o-up"></i>
@@ -132,25 +252,43 @@
 </div>
 
 <script type="text/ractive" id="listTpl">
+    <div class="header-table">
+        <div class="table">
+            <div class="title fl">标题</div>
+            <div class="date fr">创建时间</div>
+        </div>
+    </div>
     <ul class="postlist">
-        {{#posts}}
-        <li class="postlist">
-        <a href="#post/{{number}}">
-            <i class="line"></i>
-            <em></em>
-            {{title}}
-        </a>
-        <span class="datetime">
-        <!--<img src="{{user.avatar_url}}&s=18" class="avatar">.-->
-        来自于
-        <a href="{{user.html_url}}">{{user.login}}</a>.
-        <i class="fa fa-calendar-plus-o"></i>
-        发表于
-        {{formatTime(created_at)}}</span></li>
-        {{/posts}}
+            {{#posts}}
+
+            <li class="postlist">
+                <div class="table">
+                    <a href="#post/{{number}}">
+                        <em></em>
+                        {{title}}
+                    </a>
+
+                    <span class="datetime">
+
+                    <!--<img src="{{user.avatar_url}}&s=18" class="avatar">.
+                    来自于
+                    <a href="{{user.html_url}}">{{user.login}}</a>.
+                    <i class="fa fa-calendar-plus-o"></i>
+                    -->
+                    发表于
+                    {{formatTime(created_at)}}
+
+                    </span>
+                </div>
+            </li>
+
+            {{/posts}}
+
     </ul>
-    {{#prev}}<a href="#p{{page-1}}" class="prev">上一页</a>{{/prev}}
-    {{#next}}<a href="#p{{page+1}}" class="next">下一页</a>{{/next}}
+    <!--
+        {{#prev}}<a href="#p{{page-1}}" class="prev">上一页</a>{{/prev}}
+        {{#next}}<a href="#p{{page+1}}" class="next">下一页</a>{{/next}}
+        -->
 </script>
 <script type="text/ractive" id="detailTpl">
     {{#post}}
@@ -159,6 +297,7 @@
         <a href="{{user.html_url}}"><img src="{{user.avatar_url}}&s=40" class="avatar">{{user.login}}</a>
         发表于 {{formatTime(created_at)}}</span>
      <div class="content">{{{markdown2HTML(body)}}}</div>
+
     {{/post}}
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
@@ -190,7 +329,7 @@
         str = '';
       str += d.getFullYear() + '年'; //获取当前年份
       str += d.getMonth() + 1 + '月'; //获取当前月份（0——11）
-      str += d.getDate() + '&nbsp;';
+      str += d.getDate() + '日&nbsp;';
       str += d.getHours() + ':';
       str += d.getMinutes() + ':';
       str += d.getSeconds();
@@ -198,7 +337,7 @@
     }
     setInterval(function() {
       $("#time").html(current)
-    }, 1000);
+    }, 100);
   </script>
   <!--音乐盒子-->
   <script type="text/javascript">
@@ -207,6 +346,32 @@
     $("#musicbox").toggle(300);
     });
   });
+  </script>
+  <script type="text/javascript">
+      $("#post").click(function () {
+          $("#container").css("display","block");
+          $(".mood").css("display","none");
+          $(".about").css("display","none");
+          $(".project").css("display","none");
+      })
+      $("#mood").click(function(){
+          $(".mood").css("display","block");
+          $("#container").css("display","none");
+          $(".about").css("display","none");
+          $(".project").css("display","none");
+      });
+      $("#project").click(function () {
+          $(".project").css("display","block");
+          $(".mood").css("display","none");
+          $(".about").css("display","none");
+          $("#container").css("display","none");
+      })
+      $("#about").click(function () {
+          $(".about").css("display","block");
+          $(".project").css("display","none");
+          $(".mood").css("display","none");
+          $("#container").css("display","none");
+      })
   </script>
 </body>
 </html>
