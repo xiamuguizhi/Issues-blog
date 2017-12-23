@@ -80,7 +80,7 @@
 </head>
 <body>
 <div id="line"></div>
-<div id="header" class="fl">
+<div id="header" class="fr">
   <h1 id="link">
 
       <a href="javascript:;" onClick="javascript :history.back(-1);">
@@ -105,8 +105,8 @@
       </p>
 
       <dl class="link"><!--Date:2017/12/12-->
-          <dd><a href="javascript:" id="post" class="active">博客文章</a></dd>
-          <dd><a href="javascript:" id="mood">我的说说</a></dd>
+          <dd><a href="javascript:" id="post">博客文章</a></dd>
+          <dd><a href="javascript:" id="music">来首音乐</a></dd>
           <dd><a href="javascript:" id="project">所有项目</a></dd>
           <dd><a href="javascript:" id="about">关于我</a></dd>
       </dl>
@@ -115,45 +115,8 @@
 
   </h1>
 </div>
-<!--
-<div class="windows">
-    <div class="red"></div>
-    <div class="orange"></div>
-    <div class="green"></div>
-</div>
--->
-<div id="container" class="fl">
+<div id="container">
     <center><img src="loading.gif" alt="loading" class="loading"></center>
-</div>
-
-<div class="mood">
-        <div class="show-list">
-            <div class="commit">
-                2017年12月14日 09:38
-            </div>
-            <div class="con">
-                <p>今天早上是代码课，从早上到第二节课</p>
-                <p>我像往常一样，玩着自己的</p>
-                <p>早上我感到一种孤独感，我自己也喜欢这种孤独感，所以我自己坐到了最后一排</p>
-                <p>有点想哭，很孤独</p>
-                <p>我现在已经放弃读书了</p>
-                <p>我不知道以后会不会后悔，但我知道我只能这样了</p>
-                <p>这个学校已经没有我所可依赖的了</p>
-                <p>除了每天的吃饭时间，其他时间我都无所谓了</p>
-                <p>最后表示一句:去ＴＭ的社会!</p>
-            </div>
-        </div>
-        <div class="show-list">
-            <div class="commit">
-                2017年12月11日 18:43
-            </div>
-            <div class="con">
-                <p>现在是第一节自习，我现在带个耳机</p>
-                <p>是班主任的课，所以我把板凳放下来着玩</p>
-                <p>以后这个就是我用来记录事件的秘密仓库了</p>
-                <p>可以是日记，也可以是大事件</p>
-            </div>
-        </div>
 </div>
 
 <div class="project">
@@ -243,19 +206,15 @@
     </a>
 </div>
 
-<a href="javascript:;" id="music">
-  <img src="music.svg" alt="">
-</a>
-
 <div id="musicbox">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=363800017&auto=0&height=430"></iframe>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=363800017&auto=0&height=430"></iframe>
 </div>
 
 <script type="text/ractive" id="listTpl">
     <div class="header-table">
         <div class="table">
-            <div class="title fl">标题</div>
-            <div class="date fr">创建时间</div>
+            <div class="title fl">文章标题</div>
+            <div class="date fr">什么时间写的</div>
         </div>
     </div>
     <ul class="postlist">
@@ -348,30 +307,39 @@
   });
   </script>
   <script type="text/javascript">
+      /*
+      $("#post,#project,#about").click(function(){
+          $(this).toggleClass("active");
+       })
+       */
       $("#post").click(function () {
           $("#container").css("display","block");
-          $(".mood").css("display","none");
-          $(".about").css("display","none");
-          $(".project").css("display","none");
+          $(".about,.project").css("display","none");
       })
-      $("#mood").click(function(){
-          $(".mood").css("display","block");
-          $("#container").css("display","none");
-          $(".about").css("display","none");
-          $(".project").css("display","none");
-      });
       $("#project").click(function () {
           $(".project").css("display","block");
-          $(".mood").css("display","none");
-          $(".about").css("display","none");
-          $("#container").css("display","none");
+          $(".about,#container").css("display","none");
       })
       $("#about").click(function () {
           $(".about").css("display","block");
-          $(".project").css("display","none");
-          $(".mood").css("display","none");
-          $("#container").css("display","none");
+          $(".project,#container").css("display","none");
       })
   </script>
 </body>
 </html>
+<!-- 博客已经运行
+
+已勉强运行
+ <b>
+  <strong>
+    <script language="JavaScript" type ="text/javascript">
+       var urodz = new Date("12/06/2000")
+       var now = new Date();
+       var ile = now.getTime() - urodz.getTime();
+       var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+       document.write( + dni)
+     </script>
+  </strong>
+</b>
+
+-->

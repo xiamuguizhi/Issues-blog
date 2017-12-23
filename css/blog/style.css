@@ -48,14 +48,14 @@ h2{
 #header{
     position: fixed;
     top:0;
-    left:0;
+    right:0;
     width: 10%;
     height: 100%;
     text-align: center;
     background: #fbfbfb;
     border-right: 1px dashed #f4ecec;
-    box-shadow: 3px -3px 10px rgba(161, 161, 161, 0.1);
-    /*animation: top-b 2s;*/
+    box-shadow: 10px -3px 30px #333;
+    animation: top-b 2s;
     transition: all .3s;
     z-index: 99;
 }
@@ -96,10 +96,11 @@ h2{
   font-size: 10px;
   bottom: 10px;
   left: 0;
-  width: 90%;
+  width: 100%;
   transition: all .3s;
   color: #333;
   margin: 5px 0;
+  text-align: right;
 }
 #me{
     display: inline-block;
@@ -200,7 +201,6 @@ h2{
     position: relative;
     width: 90%;
     margin-bottom: 40px;
-    margin-left: 10%;
    /* animation: content .5s ease-in;*/
     transition: all .3s;
 }
@@ -238,6 +238,7 @@ h2{
     height: 50px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    box-shadow: 1px 1px 10px #eee;
     background: #f9fafc;
     z-index: 99;
 }
@@ -361,7 +362,7 @@ ul.postlist li.postlist:hover em{
 #back{
     position: fixed;
     bottom: 20px;
-    right: 5%;
+    right: 12%;
     text-align: center;
 }
 #back a{
@@ -377,31 +378,12 @@ ul.postlist li.postlist:hover em{
     border-radius: 50%;
     line-height: 40px;
     color: #fff;
-    box-shadow: 1px 1px 5px #ccc;
     background: #333;
-}
-#music{
-  position: fixed;
-  top: 0;
-  right:1%;
-  font-size: 20px;
-  color: rgb(158, 157, 157);
-  z-index: 999;
-  transition: all .3s;
-}
-#music img{
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-}
-#music:hover{
-  transform: scale(1.2,1.2);
-  color: #333;
 }
 #musicbox{
   position: fixed;
-  top:10%;
-  right: 5%;
+  top:5%;
+  right: 10%;
   display: none;
 }
 .show-list{
