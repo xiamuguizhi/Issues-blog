@@ -4,88 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>加载中......</title>
-    <!--md渲染-->
-    <link rel='stylesheet' href='css/blog/markdown.css' type='text/css'/>
-    <link rel='stylesheet' href='css/blog/style.css' type='text/css'/>
-    <link rel="stylesheet" href="css/base.css" type="text/css">
-    <link rel="stylesheet" href="css/zoomify.css" type="text/css"/>
-    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="icon" href="http://github.com/favicon.ico">
-    <!--路由解析-->
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <!--<link rel='stylesheet' href='css/markdown.css' type='text/css'/>-->
+    <link rel='stylesheet' href='css/style.css' type='text/css'/>
+    <link rel="stylesheet" href="css/typo.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
     <script src="js/director.min.js"></script>
     <script src="js/ractive.min.js"></script>
-    <!--md渲染-->
     <script src="https://cdn.bootcss.com/marked/0.3.6/marked.js"></script>
-    <!--配置-->
     <script src="config.js"></script>
-    <!--高亮你的语法-->
-    <link rel="stylesheet"
-          href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <style type="text/css">
-    @media screen and (max-width: 1100px){
+      @media screen and (max-width: 1100px){
+          #time{
+              display: none;
+          }
+      }
+      @media screen and (max-width: 700px){
+        .windows,
+        #music,
+        .link,
+        #info,
+        .datetime,
+        .header-table,
         #time{
-            display: none;
+          display: none;
         }
-    }
-    @media screen and (max-width: 700px){
-      .windows,
-      #music,
-      .link,
-      #info,
-      .datetime,
-      .header-table,
-      #time{
-        display: none;
-      }
-      #header{
-        position: inherit;
-        width: 100%;
-        height: auto;
-        background: rgb(45, 211, 227);
-        border: none;
-      }
-      #header h5{
-        color: #fff;
-      }
-      #header p{
-        display: none;
-      }
-      #container,
-      ul.postlist{
-        width: 100%;
-        margin:0;
-      }
-      ul.postlist li.postlist{
-        text-indent: 1em;
-      }
-      #link a{
-        border: none;
-        box-shadow: none;
-      }
-      #back{
-          background: #000;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%;
-      }
-      #back a{
+        #header{
+          position: inherit;
+          width: 100%;
+          height: auto;
+          background: rgb(45, 211, 227);
+          border: none;
+        }
+        #header h5{
           color: #fff;
-      }
-      #back a:hover{
+        }
+        #header p{
+          display: none;
+        }
+        #container,
+        ul.postlist{
+          width: 100%;
+          margin:0;
+        }
+        ul.postlist li.postlist{
+          text-indent: 1em;
+        }
+        #link a{
+          border: none;
           box-shadow: none;
+        }
+        #back{
+            background: #000;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        #back a{
+            color: #fff;
+        }
+        #back a:hover{
+            box-shadow: none;
+        }
       }
-    }
     </style>
 </head>
 <body>
 <div id="line"></div>
-<div id="header" class="fr">
+<a href="javascript:;" id="menu">
+  <i></i>
+  <i></i>
+  <i></i>
+</a>
+<div id="header">
   <h1 id="link">
-
+      <!--
       <a href="javascript:;" onClick="javascript :history.back(-1);">
           <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=2915537708&spec=100" alt="骚年，你的网速太差了" id="me">
       </a>
+    -->
 
       <br>
 
@@ -95,7 +94,7 @@
 
       <br>
 
-      <p>反人类社会的智障!</p>
+      <p>重度社交恐惧证</p>
 
       <br>
 
@@ -105,104 +104,25 @@
       </p>
 
       <dl class="link"><!--Date:2017/12/12-->
-          <dd><a href="javascript:" id="post">博客文章</a></dd>
-          <dd><a href="javascript:" id="music">来首音乐</a></dd>
-          <dd><a href="javascript:" id="project">所有项目</a></dd>
-          <dd><a href="javascript:" id="about">关于我</a></dd>
+          <dd><a href="javascript:" id="post">Home</a></dd>
+          <dd><a href="javascript:" id="music">Music</a></dd>
+          <dd><a href="javascript:" id="project">Project</a></dd>
+          <dd><a href="javascript:" id="about">About</a></dd>
       </dl>
 
       <div id="time"></div>
 
   </h1>
+
 </div>
+
 <div id="container">
-    <center><img src="loading.gif" alt="loading" class="loading"></center>
-</div>
-
-<div class="project">
-    <div class="show-list">
-        <div class="commit">
-            <a href="http://github.com/chenhonzhou/chenhonzhou.github.io" target="_blank">chenhonzhou.github.io</a>
-        </div>
-        <ul class="con">
-            <li>ver: 3.4.0</li>
-            <li>Power: 80%</li>
-            <li>Tips: 我的第一个项目</li>
-        </ul>
-    </div>
-    <div class="show-list">
-        <div class="commit">
-            <a href="http://github.com/chenhonzhou/blog" target="_blank">blog</a>
-        </div>
-        <ul class="con">
-            <li>ver: 1.4.0</li>
-            <li>Power: 100%</li>
-            <li>Tips:Github_Pages+Issues</li>
-        </ul>
-    </div>
-    <div class="show-list">
-        <div class="commit">
-            <a href="http://github.com/chenhonzhou/qq-ui" target="_blank">QQ-ui</a>
-        </div>
-        <ul class="con">
-            <li>Power: 0%</li>
-            <li>Tips:新挖的坑,没时间写/手动滑稽</li>
-        </ul>
-    </div>
-    <div class="show-list">
-        <div class="commit">
-            <a href="http://github.com/chenhonzhou/" target="_blank">JS-Loading</a>
-        </div>
-        <ul class="con">
-            <li>Power: 0%</li>
-            <li>Tips:进行时...</li>
-        </ul>
-    </div>
-    <div class="show-list">
-        <div class="commit">
-            <a href="https://github.com/chenhonzhou/Super-GirlFirends" target="_blank">Super-GirlFirends</a>
-        </div>
-        <ul class="con">
-            <li>Power: 0%</li>
-            <li>Tips:My girlfriend, you can't peek 2333333</li>
-        </ul>
-    </div>
-    <div class="show-list">
-        <div class="commit">
-            <a href="https://github.com/chenhonzhou/MarkDown-Preview" target="_blank">MarkDown-Preview</a>
-        </div>
-        <ul class="con">
-            <li>Power: 0%</li>
-            <li>Tips:no.0</li>
-        </ul>
-    </div>
-    <div class="show-list">
-        <div class="commit">
-            <a href="https://github.com/chenhonzhou/Linux-Deepin-Beautiful" target="_blank">Linux-Deepin-Beautiful</a>
-        </div>
-        <ul class="con">
-            <li>Power: 0%</li>
-            <li>Tips:什么都没有，只有一个脚本</li>
-        </ul>
-    </div>
-    <div class="show-list">
-        <div class="commit">
-            <a href="https://github.com/chenhonzhou/we27" target="_blank">WE27</a>
-        </div>
-        <ul class="con">
-            <li>Power: 0%</li>
-            <li>Tips:班级网站，学了JS在填坑</li>
-        </ul>
-    </div>
-</div>
-
-<div class="about">
-    <iframe src="http://chenhonzhou.github.io/DEMO/about" frameborder="0" width="100%" height="1000px"></iframe>
+    <center><img src="loading.svg" alt="loading" class="loading"></center>
 </div>
 
 <div id="back">
     <a href="javascript:">
-        <i class="fa fa-hand-o-up"></i>
+        <i class="fa fa-arrow-up"></i>
     </a>
 </div>
 
@@ -211,19 +131,11 @@
 </div>
 
 <script type="text/ractive" id="listTpl">
-    <div class="header-table">
-        <div class="table">
-            <div class="title fl">文章标题</div>
-            <div class="date fr">什么时间写的</div>
-        </div>
-    </div>
     <ul class="postlist">
             {{#posts}}
 
             <li class="postlist">
-                <div class="table">
                     <a href="#post/{{number}}">
-                        <em></em>
                         {{title}}
                     </a>
 
@@ -238,28 +150,26 @@
                     {{formatTime(created_at)}}
 
                     </span>
-                </div>
             </li>
 
             {{/posts}}
 
     </ul>
-    <!--
+
         {{#prev}}<a href="#p{{page-1}}" class="prev">上一页</a>{{/prev}}
         {{#next}}<a href="#p{{page+1}}" class="next">下一页</a>{{/next}}
-        -->
+
 </script>
 <script type="text/ractive" id="detailTpl">
     {{#post}}
      <h1>{{title}}</h1>
      <span class="create_at">
-        <a href="{{user.html_url}}"><img src="{{user.avatar_url}}&s=40" class="avatar">{{user.login}}</a>
+        <a href="{{user.html_url}}"><!--<img src="{{user.avatar_url}}&s=40" class="avatar">-->{{user.login}}</a>
         发表于 {{formatTime(created_at)}}</span>
      <div class="content">{{{markdown2HTML(body)}}}</div>
 
     {{/post}}
 </script>
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 <script src="app.js"></script>
 <!--返回顶部-->
 <script type="text/javascript">
@@ -325,21 +235,27 @@
           $(".project,#container").css("display","none");
       })
   </script>
+  <script type="text/javascript">
+      var typo=document.getElementById("container");
+      typo.className="typo";
+  </script>
 </body>
 </html>
 <!-- 博客已经运行
 
-已勉强运行
- <b>
-  <strong>
-    <script language="JavaScript" type ="text/javascript">
-       var urodz = new Date("12/06/2000")
-       var now = new Date();
-       var ile = now.getTime() - urodz.getTime();
-       var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-       document.write( + dni)
-     </script>
-  </strong>
-</b>
 
+<div id="copy">
+  已勉强运行
+   <b>
+    <strong>
+      <script language="JavaScript" type ="text/javascript">
+         var urodz = new Date("12/06/2000")
+         var now = new Date();
+         var ile = now.getTime() - urodz.getTime();
+         var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+         document.write( + dni)
+       </script>
+    </strong>
+  </b>
+</div>
 -->

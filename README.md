@@ -1,6 +1,21 @@
+-------
+
+	<p align="center">Developimg...</p>
+	<p align="center">Power: 100%</p>
+	
+
+```
+	Harddevelop >> localct
+
+	Master      >> develop
+
+```
+
+-------
+
 <p align="center"><img src="README/v1.5.png"/></p>
 
-<p align="center" style="font-weight: blod;"><a href="http://装逼.top" target="_blank">DEMO</a></p>
+<p align="center" style="font-weight: blod;"><a href="http://装逼.top" target="_blank">YoungDog | DEMO</a></p>
 
 ------------
 
@@ -20,12 +35,24 @@
 
 - Netease: [HardDeams](http://music.163.com/#/user/home?id=266341607)
 
+# 使用到的开源项目
 
-## Deployment method
+<p align="center">
+  <a href="https://github.com/flatiron/director">director.js</a> |
+  <a href="http://www.ractivejs.org">ractive.js</a> |
+  <a href="http://fontawesome.io/">marked.js</a> |
+  <a href="http://underscorejs.org/">Underscore.js</a> |
+  <a href="https://typo.sofi.sh/">typo.css</a> |
+  <a href="http://underscorejs.org/">normalize.css</a> |
+  <a href="http://fontawesome.io/">font-awesome.css</a> |
+  <a href="http://jquery.com/">jquery.js</a>
+</p>
+
+## 部署
 
  - Fork 本项目，然后再新建一个用于存放 blog（issues）的 repo。 （fork 的项目是没有 issue 的，所以得新建个项目）
 
- - 修改 gh-pages 分支下根目录的 config.js，填写好对应的博客名称，你自己的 github 用户名、对应项目名、多说 ID，保存。多说账号在这里申请http://duoshuo.com/
+ - 修改根目录的 config.js，填写好对应的博客名称，你自己的 github 用户名、对应项目名、多说 ID，保存。多说账号在这里申请http://duoshuo.com/
 
 
             var _config = {

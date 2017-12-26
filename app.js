@@ -17,7 +17,7 @@ function index(page){
             per_page     : _config['per_page']
         },
         beforeSend:function(){
-          $('#container').html('<center><img src="loading.gif" class="loading"></center>');
+          $('#container').html('<center><img src="loading.svg" class="loading"></center> \n <center>加载中...<center>');
         },
         success:function(data, textStatus, jqXHR){
             var link = jqXHR.getResponseHeader("Link") || "";
@@ -49,7 +49,7 @@ function index(page){
               });
               window._G.post[data[i].number] = {};
               window._G.post[data[i].number].body = ractive.toHTML();
-              
+
               var title = data[i].title + " | " + _config['blog_name'];
               window._G.post[data[i].number].title = title;
             }
@@ -76,9 +76,9 @@ function toggleDuoshuoComments(container, id){
 function detail(id){
     if(!window._G){
       window._G = {post: {}, postList: {}};
-      window._G.post[id] = {};  
+      window._G.post[id] = {};
     }
-    
+
     if(_G.post[id].body != undefined){
       $('#container').html(_G.post[id].body);
       $('title').html(_G.post[id].title);
@@ -105,7 +105,7 @@ function detail(id){
             toggleDuoshuoComments('#container', id);
             highlight();
         }
-    });  
+    });
 
 }
 
