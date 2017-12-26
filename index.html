@@ -208,7 +208,9 @@
         <a href="{{user.html_url}}"><!--<img src="{{user.avatar_url}}&s=40" class="avatar">-->{{user.login}}</a>
         发表于 {{formatTime(created_at)}}</span>
      <div class="content">{{{markdown2HTML(body)}}}</div>
-
+     <span id="busuanzi_container_page_pv">
+     本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+     </span>  
     {{/post}}
 </script>
 <script src="app.js"></script>

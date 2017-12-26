@@ -19,14 +19,13 @@
     margin-left: 3em;
   }
   #back{
-      background: #000;
+      right: 3%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
-      display: none!importantd;
   }
   #back a{
-      color: #fff;
+      color: #333;
   }
   #back a:hover{
       box-shadow: none;

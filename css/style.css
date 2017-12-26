@@ -264,17 +264,14 @@ h2{
     position: relative;
     width: 800px;
     margin: 60px auto;
-   /* animation: content .5s ease-in;*/
+    animation: content 1s;
     transition: all .3s;
 }
-.mood{
-    position: fixed;
-    top:0;
-    left:0;
-    margin-left: 10%;
-    width: 90%;
-    display: none;
-    transition: all .3s;
+@keyframes content {
+    0%{
+        opacity: 0;
+        transform:translate(0,-10%);
+    }
 }
 .project,
 .about{
@@ -282,12 +279,6 @@ h2{
     margin: 80px auto;
     display: none;
     transition: all .3s;
-}
-@keyframes content {
-    0%{
-        opacity: 0;
-        transform:translate(20%,0);
-    }
 }
 .postlist{
     position: relative;
@@ -374,4 +365,10 @@ ul.postlist li.postlist{
     font-size: 12px;
     margin: 5px;
     padding: 15px;
+}
+#busuanzi_container_page_pv{
+  display: block;
+  border-top: 1px dashed #d1d1d1;
+  padding-top: 15px;
+  color: rgb(66, 69, 63);
 }
