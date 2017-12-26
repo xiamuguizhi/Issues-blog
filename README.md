@@ -1,21 +1,9 @@
--------
 
-	<p align="center">Developimg...</p>
-	<p align="center">Power: 100%</p>
-	
-
-```
-	Harddevelop >> localct
-
-	Master      >> develop
-
-```
-
--------
-
-<p align="center"><img src="README/v1.5.png"/></p>
+<p align="center"><img src="README/v1.6.png"/></p>
 
 <p align="center" style="font-weight: blod;"><a href="http://装逼.top" target="_blank">YoungDog | DEMO</a></p>
+
+
 
 ------------
 
