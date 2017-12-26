@@ -372,3 +372,8 @@ ul.postlist li.postlist{
   padding-top: 15px;
   color: rgb(66, 69, 63);
 }
+/*评论系统*/
+#ment{
+  width: 100%;
+  height: auto;
+}

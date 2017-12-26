@@ -16,6 +16,20 @@
     <script src="https://cdn.bootcss.com/marked/0.3.6/marked.js"></script>
     <script src="config.js"></script>
     <script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+           var gitment = new Gitment({
+          //   id: '', // 可选。默认为 location.href
+             owner: 'chenhonzhou',
+             repo: 'gitment',
+             oauth: {
+               client_id: '7b615a6ae8426cb6e178',
+               client_secret: 'e4756e262d7d744899b5a761e11c3c6207fdb35c',
+             },
+           })
+         gitment.render('ment');
+    </script>
 </head>
 <body>
 <div id="line"></div>
@@ -48,23 +62,6 @@
           <dd><a href="javascript:" id="about">About</a></dd>
       </dl>
       <div id="copy">
-        <!--
-        <p>
-          博客已经运行
-          <b>
-           <strong>
-             <script language="JavaScript" type ="text/javascript">
-                var urodz = new Date("10/01/2017")
-                var now = new Date();
-                var ile = now.getTime() - urodz.getTime();
-                var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-                document.write( + dni)
-              </script>
-           </strong>
-         </b>
-         天
-        </p>
-       -->
        <p>
          <span id="busuanzi_container_site_pv">
            本站总访问量:
@@ -209,8 +206,11 @@
         发表于 {{formatTime(created_at)}}</span>
      <div class="content">{{{markdown2HTML(body)}}}</div>
      <span id="busuanzi_container_page_pv">
-     本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+      老哥发现有
+        <span id="busuanzi_value_page_pv"></span>
+      只友仔经过
      </span>
+     <div id="ment"></div>
     {{/post}}
 </script>
 <script src="app.js"></script>
@@ -307,10 +307,6 @@
 </body>
 </html>
 <!-- 博客已经运行
-
-
-<div id="copy">
-  已勉强运行
    <b>
     <strong>
       <script language="JavaScript" type ="text/javascript">
@@ -322,5 +318,4 @@
        </script>
     </strong>
   </b>
-</div>
 -->
