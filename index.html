@@ -19,12 +19,15 @@
 </head>
 <body>
 <div id="line"></div>
+<div class="reading-bar"></div>
 <div id="nav">
+  <a href="#" id="github">
+    <img src="sun.png" alt="">
+    <span>
+      YoungDog's Blog
+    </span>
+  </a>
   <p>
-    <a href="JavaScript:;" onclick="javascript :history.back(-1);" class="back">
-      <i class="fa fa-chevron-circle-left"></i>
-    </a>
-    YoungDog's Blog <i>|</i>
     <a href="http://github.com/chenhonzhou/note-blog" target="_blank">Github</a> <i>|</i>
     <a href="https://www.v2ex.com/member/chenhonzhou" target="_blank">V2ex</a> <i>|</i>
     <a href="https://space.bilibili.com/27013266?from=search&seid=3275070897980156250#!/index" target="_blank">Bilibili</a> <i>|</i>
@@ -208,9 +211,6 @@
         <a href="{{user.html_url}}"><!--<img src="{{user.avatar_url}}&s=40" class="avatar">-->{{user.login}}</a>
         发表于 {{formatTime(created_at)}}</span>
      <div class="content">{{{markdown2HTML(body)}}}</div>
-     <span id="busuanzi_container_page_pv">
-     本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-     </span>
     {{/post}}
 </script>
 <script src="app.js"></script>
@@ -304,13 +304,16 @@
         new_scroll_position = last_scroll_position;
       });
 </script>
+<script type="text/javascript" src="js/headBand.min.js"></script>
+<script type="text/javascript">
+    $('.reading-bar').headBand({
+      'background':'#008000',//设置背景色
+      'height':"3" //设置进度条高度
+    });
+</script>
 </body>
 </html>
-<!-- 博客已经运行
-
-
-<div id="copy">
-  已勉强运行
+<!--
    <b>
     <strong>
       <script language="JavaScript" type ="text/javascript">
@@ -322,5 +325,4 @@
        </script>
     </strong>
   </b>
-</div>
 -->

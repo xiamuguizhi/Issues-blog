@@ -64,7 +64,7 @@ h2{
     width: 100%;
     opacity: 0;
     height: 3px;
-    background: #000;
+    background: #008000;
     animation: loading-line 5s ease-in;
     transition: all .5s;
     z-index: 999;
@@ -89,11 +89,37 @@ h2{
   background: rgba(255,255,255,.9);
   z-index: 99;
   text-align: center;
+  box-shadow: 1px 1px 5px #ccc;
   overflow: hidden;
 }
 #nav p{
   line-height: 60px;
   font-size: 16px;
+}
+#github{
+  position: absolute;
+  top:0;
+  left:10px;
+  height: 60px;
+  margin-left: 10px;
+  /*background: url("../sun.png") no-repeat bottom;*/
+  background-size: 100%;
+}
+#github img{
+  display: inline-block;
+  margin: 0;
+  height: 60px;
+}
+#github span{
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  color: #999999;
+  vertical-align: top;
+}
+#github span:Hover{
+  color: #1abc9c;
 }
 .back{
   display: inline-block;
@@ -263,7 +289,7 @@ h2{
 #container {
     position: relative;
     width: 800px;
-    margin: 60px auto;
+    margin: 80px auto 60px;
     animation: content 1s;
     transition: all .3s;
 }
