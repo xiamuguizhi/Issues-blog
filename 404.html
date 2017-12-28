@@ -1,9 +1,10 @@
+
   <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>404</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="http://github.com/favicon.ico">
     <style type="text/css">
       .con{
         width: 40%;
@@ -22,9 +23,8 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background: #E08031;
-        border: 2px solid #E08031;
-        transition: all .5s;
+        border: 2px solid #0e0d0d;
+        transition: all .1s;
       }
       .emoji em{
         position: absolute;
@@ -32,6 +32,8 @@
         height: 100%;
       }
       .emoji:hover{
+        border: 2px solid #333;
+        background: #333;
         box-shadow: 5px 8px 20px #333;
       }
       .emoji i{
@@ -41,7 +43,7 @@
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        box-shadow: 1px 1px 10px #333;
+
         background: #333;
         transition: all .3s;
       }
@@ -55,12 +57,14 @@
       }
       .emoji:hover i:first-child,
       .emoji:hover i:last-child{
+        background: #fff;
         top: 80px;
         box-shadow: 2px 10px 34px #333;
       }
       .emoji:hover i.i{
         top: 75%;
         right: 45%;
+        background: #fff;
         box-shadow: 3px 5px 15px #333;
       }
       .tip{

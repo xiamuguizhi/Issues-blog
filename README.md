@@ -1,5 +1,5 @@
 
-<p align="center"><img src="README/v1.6.png"/></p>
+<p align="center"><img src="https://github.com/chenhonzhou/Note-blog/blob/ver/v1.7.png"/></p>
 
 <p align="center" style="font-weight: blod;"><a href="http://装逼.top" target="_blank">YoungDog | DEMO</a></p>
 
@@ -8,7 +8,7 @@
 ------------
 
 
-# Link
+# 找到我
 > **Fork自:[wuhaoworld](https://github.com/wuhaoworld/github-issues-blog)**
 
 - Github: [chenhonzhou](http://github.com/chenhonzhou)
