@@ -1,7 +1,7 @@
 @media screen and (min-width: 1000px) {
-  #header{
+  /*#header{
     width: 15%;
-  }
+  }*/
 }
 @media screen and (max-width: 700px){
   .datetime,
@@ -24,10 +24,17 @@
       -moz-border-radius: 50%;
       border-radius: 50%;
   }
-  #back a{
-      color: #333;
+  #github{
+    left:0;
   }
-  #back a:hover{
-      box-shadow: none;
+  ul.postlist li.postlist:before{
+    display: none;
+  }
+  .footer{
+    margin-left: 10px;
+  }
+  .footer .fl,
+  .footer .fr{
+    font-size: 12px;
   }
 }
