@@ -130,19 +130,6 @@ h2 {
   height: 60px;
 }
 
-#github span {
-  display: inline-block;
-  height: 60px;
-  line-height: 60px;
-  font-size: 18px;
-  color: #999999;
-  vertical-align: top;
-}
-
-#github span:Hover {
-  color: #1abc9c;
-}
-
 .back {
   display: inline-block;
   padding: 0 15px;
@@ -332,12 +319,14 @@ h2 {
 }
 
 .project, .about {
-  width: 60%;
+  width: 80%;
   margin: 80px auto;
   display: none;
   transition: all .3s;
 }
-
+.about{
+  margin-left: -8%;
+}
 .postlist {
   position: relative;
   padding: 10px 0;
@@ -458,4 +447,19 @@ ul.postlist li.postlist:before {
   border-top: 1px dashed #d1d1d1;
   padding-top: 15px;
   color: rgb(66, 69, 63);
+}
+#container .back{
+  display: inline-block;
+  font-size: 14px;
+  border:1px solid #1abc9c;
+  background: none;
+  transition: all .3s;
+  cursor: pointer;
+}
+#container .back:hover{
+  border: 1px solid #333;
+  color: #333;
+}
+#container .back:hover i{
+  color: #333;
 }
