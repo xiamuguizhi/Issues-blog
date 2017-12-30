@@ -1,13 +1,9 @@
 
 <p align="center"><img src="src/v1.7.1.png"/></p>
-
 <p align="center" style="font-weight: blod;">
   <a href="http://装逼.top" target="_blank">YoungDog | DEMO</a>  
-  <br>
   <a href="http://html.chenhonzhou.link/?https://github.com/chenhonzhou/Note-blog/blob/develop/index.html" target="_blank">Develop | DEMO</a>
-
 </p>
-
 <p align="center">
   <a href="log">Develop | Log</a>
 </p>
