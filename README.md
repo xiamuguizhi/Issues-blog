@@ -1,7 +1,7 @@
 
 <p align="center"><img src="https://github.com/chenhonzhou/Note-blog/blob/ver/v1.7.png"/></p>
 
-<p align="center" style="font-weight: blod;"><a href="http://装逼.top" target="_blank">YoungDog | DEMO</a></p>
+<p align="center" style="font-weight: blod;"><a href="http://装逼.top" target="_blank">YoungDog | DEMO</a> | <a href="http://chenhonzhou.link">YoungDog | HOME</a>  </p>
 
 
 
