@@ -1,4 +1,12 @@
-<p align="center" style="font-weight: blod;"><a href="http://装逼.top" target="_blank">YoungDog | DEMO</a> | <a href="http://chenhonzhou.link">YoungDog | HOME</a>  </p>
+<p align="center">
+    <img
+    src="https://github.com/chenhonzhou/Note-blog/blob/master/src/v1.7.1.png" >
+</p>
+<p align="center" style="font-weight: blod;">
+    <a href="http://装逼.top" target="_blank">YoungDog | DEMO</a> 
+         |
+    <a href="http://chenhonzhou.link">YoungDog | HOME</a>  
+ </p>
 
 
 
