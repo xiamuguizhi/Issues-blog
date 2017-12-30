@@ -33,8 +33,10 @@
   .footer{
     margin-left: 10px;
   }
-  .footer .fl,
-  .footer .fr{
+  .footer .fl{
     font-size: 12px;
+  }
+  .footer .fr{
+    display: none;
   }
 }

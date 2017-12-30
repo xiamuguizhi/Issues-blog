@@ -114,20 +114,19 @@ h2 {
   font-size: 16px;
 }
 
-#github {
+.github {
   position: absolute;
   top: 0;
   left: 10px;
+  line-height: 60px;
   height: 60px;
+  font-size: 20px;
   margin-left: 10px;
-  /*background: url("../sun.png") no-repeat bottom;*/
   background-size: 100%;
 }
 
-#github img {
-  display: inline-block;
-  margin: 0;
-  height: 60px;
+.github:Hover{
+  text-decoration: none;
 }
 
 .back {
@@ -279,20 +278,31 @@ h2 {
   font-size: 14px;
   margin-top: 50px;
   padding-top: 10px;
-  margin-left: -5px;
   text-align: center;
 }
-
+.footer .fl{
+  margin-left: 1em;
+}
 .avatar {
   display: inline;
-  margin: 0px 0px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-decoration: none;
 }
 
 .create_at {
   color: #999;
   display: block;
   margin: 15px 0;
+  padding: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #d5dddb;
   font-size: 12px;
+}
+
+#container .create_at a{
+  border: none;
 }
 
 .loading {
@@ -305,7 +315,7 @@ h2 {
 
 #container {
   position: relative;
-  width: 800px;
+  width: 700px;
   margin: 80px auto 60px;
   animation: content 1s;
   transition: all .3s;
@@ -313,19 +323,17 @@ h2 {
 
 @keyframes content {
   0% {
+    transform: translate(0, -20%);
     opacity: 0;
-    transform: translate(0, -10%);
   }
 }
 
-.project, .about {
+.project,
+.about {
   width: 80%;
   margin: 80px auto;
   display: none;
   transition: all .3s;
-}
-.about{
-  margin-left: -8%;
 }
 .postlist {
   position: relative;
@@ -335,7 +343,7 @@ h2 {
 }
 
 .postlist a {
-  color: #4b595f;
+  color: #606a6e;
   font-size: 15px;
 }
 
@@ -350,21 +358,9 @@ ul.postlist li.postlist a:hover {
 }
 
 ul.postlist li.postlist {
-  position: relative;
   width: 100%;
   height: 50px;
   list-style: none;
-}
-
-ul.postlist li.postlist:before {
-  content: "";
-  position: absolute;
-  top: 25%;
-  left: -4%;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #538585;
-  border-radius: 50%;
 }
 
 .datetime {
@@ -373,7 +369,10 @@ ul.postlist li.postlist:before {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }
-
+.datetime img{
+  border-radius: 50%;
+  vertical-align: middle;
+}
 .datetime i {
   padding: 5px;
 }
@@ -390,15 +389,16 @@ ul.postlist li.postlist:before {
   margin-top: -1.8em;
 }
 
-#back {
+#back,
+#close{
   position: fixed;
-  bottom: 20px;
-  right: 10%;
+  bottom: 80px;
+  right: 16%;
   text-align: center;
   z-index: 999;
 }
-
-#back a {
+#back a,
+#close{
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -407,18 +407,22 @@ ul.postlist li.postlist:before {
   color: #1abc9c;
   transition: all .3s;
 }
-
-#back a:hover {
+#back a:hover,
+#close:hover{
   border-radius: 50%;
   line-height: 40px;
   color: #fff;
   background: #1abc9c;
 }
-
+#close{
+  bottom: 40px;
+  border: none;
+}
 #musicbox {
   position: fixed;
   top: 5%;
   right: 20%;
+  z-index: 99999;
   display: none;
 }
 
