@@ -9,8 +9,16 @@
   #nav p a:last-child{
     display: none;
   }
+  #nav p{
+    display: none;
+  }
   #container{
     width: 90%;
+    margin: 50px auto 0;
+  }
+  .github:after{
+    content: "|用微笑面对生活吧";
+    font-size: 14px;
   }
   .next{
     margin-right: 3em;
@@ -27,8 +35,11 @@
   #github{
     left:0;
   }
-  ul.postlist li.postlist:before{
-    display: none;
+  ul.postlist li.postlist{
+    height: auto;
+  }
+  ul.postlist li.postlist a{
+    text-decoration: none!important;
   }
   .footer{
     margin-left: 10px;
