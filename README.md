@@ -4,7 +4,7 @@
   <a href="http://html.chenhonzhou.link/?https://github.com/chenhonzhou/Note-blog/blob/develop/index.html" target="_blank">Develop | DEMO</a>
 </p>
 <p align="center">
-  <a href="log">Develop | Log</a>
+  <a href="http://html.chenhonzhou.link/?https://github.com/chenhonzhou/Note-blog/blob/develop/index.html">Develop | Log</a>
 </p>
 
 ------------
