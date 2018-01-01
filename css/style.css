@@ -69,31 +69,6 @@ h2 {
   box-shadow: none;
 }
 
-#line {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  height: 3px;
-  background: #008000;
-  animation: loading-line 5s ease-in;
-  transition: all .5s;
-  z-index: 999;
-}
-
-@keyframes loading-line {
-  0% {
-    width: 0;
-    opacity: 1;
-    box-shadow: 1px 1px 10px #333;
-  }
-  50% {
-    width: 50%;
-    opacity: 1;
-  }
-}
-
 #nav {
   position: fixed;
   top: 0;
