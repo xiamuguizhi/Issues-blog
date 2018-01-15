@@ -1,6 +1,6 @@
 <p align="center">
     <img
-    src="http://ww1.sinaimg.cn/large/0066xOjKgy1fnhib99uwij30p40dpjsg.jpg" >
+    src="https://github.com/chenhonzhou/Issues-blog/raw/master/src/v1.8.png" >
 </p>
 <p align="center" style="font-weight: blod;">
     <a href="http://装逼.top" target="_blank">YoungDog | DEMO</a>
