@@ -205,7 +205,7 @@ strong, b {
 [draggable] {
   cursor: move;
 }
-
+/*常用类:clearfix
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
@@ -218,7 +218,7 @@ strong, b {
 .clearfix {
   zoom: 1;
 }
-
+*/
 /* 强制文本换行 */
 .textwrap, .textwrap td, .textwrap th {
   word-wrap: break-word;
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 在文章中，应该还原 ul 和 ol 的样式 */
 .typo ul, .typo-ul {
-  margin-left: 1.3em;
+  /*margin-left: 1.3em;*/
   list-style: disc;
 }
 

@@ -50,6 +50,7 @@ $(function() {
   typo.className = "typo";
 
 // 上导航自动隐藏
+/*
   var new_scroll_position = 0;
   var last_scroll_position;
   var header = document.getElementById("nav");
@@ -69,3 +70,4 @@ $(function() {
     }
     new_scroll_position = last_scroll_position;
   });
+  */

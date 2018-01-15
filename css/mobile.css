@@ -6,7 +6,8 @@
 @media screen and (max-width: 700px){
   .datetime,
   #menu,
-  #nav p a:last-child{
+  #nav p a:last-child,
+  #nav ul.fr{
     display: none;
   }
   #nav p{
@@ -18,7 +19,7 @@
   }
   .github:after{
     content: "|用微笑面对生活吧";
-    font-size: 14px;
+    font-size: 12px;
   }
   .next{
     margin-right: 3em;
@@ -32,7 +33,10 @@
       -moz-border-radius: 50%;
       border-radius: 50%;
   }
-  #github{
+  #back, #close{
+    right: 3%;
+  }
+  .github{
     left:0;
   }
   ul.postlist li.postlist{
